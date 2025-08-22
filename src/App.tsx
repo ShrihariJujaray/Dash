@@ -1,8 +1,8 @@
 
 import './App.css'
+import Navigator4Button from './Navigator/Navigator4Button'
 
 
-import Home from './pages/Home'
 
 function App() {
 
@@ -10,8 +10,11 @@ function App() {
   return (
     <><div style={{ margin: "0", padding: "0"}}>
      
-     <Home></Home>
-     
+     <Navigator4Button></Navigator4Button>
+     {/* <LoadCurve></LoadCurve>
+     <MonthlyPeakLoad></MonthlyPeakLoad>
+      <LoadDurationCurve></LoadDurationCurve>
+      <Home></Home> */}
       </div>
     </>
   )
