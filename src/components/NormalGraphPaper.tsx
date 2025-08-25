@@ -15,7 +15,7 @@ const NormalGraphPaper = () => {
             p: 2,
           }}
         >
-          <Typography variant="h6">Box 1</Typography>
+          <Typography variant="h6">Graph</Typography>
         </Paper></>
         
   )

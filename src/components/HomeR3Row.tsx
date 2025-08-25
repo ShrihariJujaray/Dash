@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Typography, Autocomplete, TextField } from "@mui/material";
+import { Box, Typography, Autocomplete, TextField, Paper } from "@mui/material";
 
 const regions = ["North", "South", "East", "West"];
 const departments = ["HR", "Finance", "Engineering", "Marketing"];
@@ -7,6 +6,7 @@ const offices = ["Hyderabad", "Delhi", "Mumbai", "Chennai"];
 
 export default function FilterBox() {
   return (
+    <Paper>
     <Box
       sx={{
         display: "flex",
@@ -57,7 +57,9 @@ export default function FilterBox() {
                 borderColor: "#1976d2", // focus color
               },
             }}
-            renderInput={(params) => <TextField {...params} placeholder="Select" />}
+            renderInput={(params) => (
+              <TextField {...params} placeholder="Select" />
+            )}
           />
         </Box>
 
@@ -92,7 +94,9 @@ export default function FilterBox() {
                 borderColor: "#1976d2",
               },
             }}
-            renderInput={(params) => <TextField {...params} placeholder="Select" />}
+            renderInput={(params) => (
+              <TextField {...params} placeholder="Select" />
+            )}
           />
         </Box>
 
@@ -127,10 +131,13 @@ export default function FilterBox() {
                 borderColor: "#1976d2",
               },
             }}
-            renderInput={(params) => <TextField {...params} placeholder="Select" />}
+            renderInput={(params) => (
+              <TextField {...params} placeholder="Select" />
+            )}
           />
         </Box>
       </Box>
     </Box>
+    </Paper>
   );
 }

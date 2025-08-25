@@ -48,7 +48,7 @@ const rows = [
 export default function HomeR3Table() {
   return (
   <>
-   <div style={{ margin: "1rem", padding: "0" }}>
+   <div style={{ margin: "0rem", padding: "0" }}>
   <TableContainer component={Paper}>
     <Table sx={{ minWidth: 700 }} aria-label="customized table">
       <TableHead>
